@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator 001</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Tip Calculator</h1>
+
+      <form>
+        <input
+          type="number"
+          id="bill-amount"
+          placeholder="Bill Amount"
+          required
+        />
+
+        <input type="number" id="tip-percentage" placeholder="Tip Percentage" />
+
+        <input
+          type="number"
+          id="number-of-people"
+          placeholder="Number Of People"
+          required
+        />
+
+        <div class="form-btns">
+          <button type="button" id="calculate-button">Calculate</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+
+      <div class="result">
+        <p id="tip-amount"></p>
+        <p id="total-amount"></p>
+        <p id="amount-per-person"></p>
+      </div>
+    </div>
+    <script src="./brain.js"></script>
+  </body>
+</html>
