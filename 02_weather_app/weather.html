@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css" />
+  </head>
+  <body>
+    <main>
+      <div id="search">
+        <label for="search-field">Search Location</label>
+        <div>
+          <input
+            type="text"
+            id="search-field"
+            placeholder="e.g. Khwaza Khela"
+          />
+          <button id="search-btn">Search</button>
+        </div>
+      </div>
+      <div id="weather-data">
+        <div class="left-weather-data">
+          <h2 id="location-name"><!-- Location Name --></h2>
+          <h1 id="temperature"><!-- Current Temperature --> <img id="current-condition-icon" src="./images/day.jpg" alt="nothing" /></h1>
+          <h3 id="current-condition"><!-- Current condition --></h3>
+          <h3 id="min-max-temp"><!-- Minimum and Maximum temperature --></h3>
+        </div>
+        <div class="right-weather-data">
+          <div class="card card1">
+            <p>Rain Rate</p>
+            <p id="rain-rate"><!-- Rain Rate --></p>
+          </div>
+          <div class="card card2">
+            <p>Humidity</p>
+            <p id="humidity"><!-- Rain Rate --></p>
+          </div>
+          <div class="card card3">
+            <p>Feels Like</p>
+            <p id="feels-like"><!-- Feels Like --></p>
+          </div>
+          <div class="card card4">
+            <p>Sunrise</p>
+            <p id="sunrise"><!-- Sunrise --></p>
+          </div>
+          <div class="card card5">
+            <p>Sunset</p>
+            <p id="sunset"><!-- Sunset --></p>
+          </div>
+          <div class="card card6">
+            <p>UV Index</p>
+            <p id="uv-index"><!-- UV Index --></p>
+          </div>
+        </div>
+      </div>
+      <button id="back-to-search-btn">Back to Search</button>
+    </main>
+  </body>
+  <script src="./weather.js"></script>
+</html>
